@@ -1,4 +1,4 @@
-Class class:
+Class Bclass:
   def --init--(self,studentsName,grade):
     self.studentsName=studentsName
     self.grade=grade
@@ -7,4 +7,5 @@ Class class:
       print("exelled in exam")
     else:
       print("unfortunately failed")
-    
+p1=Bclass('Alan',72)
+
