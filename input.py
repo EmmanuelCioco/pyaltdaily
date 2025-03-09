@@ -1,3 +1,6 @@
 name=input("Enter name: ")
-age=int(input("write your age: ")
+try:
+  age=int(input("write your age: ")
+except:
+  print("you havent ententered a number")
 print(f"Hello {name} you will be turning {age+1}")
