@@ -1,11 +1,15 @@
 class Bclass:
-  def --init--(self,studentsName,grade):
-    self.studentsName=studentsName
-    self.grade=grade
-  def performane(self,grade):
-    if grade>=60:
-      print("exelled in exam")
-    else:
-      print("unfortunately failed")
-p1=Bclass('Alan',72)
+    def __init__(self, student, grade):
+        self.student = student
+        self.grade = grade
+
+    def performance(self):
+        if self.grade >= 60:
+            return f"{self.student} excelled in the exam"
+        else:
+            return f"{self.student} unfortunately failed"
+p1 = Bclass('Alan', 72)
+result = p1.performance()
+print(result)
+
 
