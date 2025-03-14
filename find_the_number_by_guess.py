@@ -1,6 +1,10 @@
 import random
 computer_generated_number=random.randint(1,100)
-user_guess_number=int(input("Guess the computer generated number from a range of 1-100:  "))
+while True:
+    try:
+        user_guess_number=int(input("Guess the computer generated number from a range of 1-100:  "))
+    except:
+        print("invalid number")
 number_of_tries=1
 while user_guess_number!=computer_generated_number:
     if user_guess_number>computer_generated_number:
